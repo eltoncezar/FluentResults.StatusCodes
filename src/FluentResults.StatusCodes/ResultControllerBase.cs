@@ -8,7 +8,7 @@ namespace FluentResults.StatusCodes
     public class ResultControllerBase : ControllerBase
     {
         [NonAction]
-        public ActionResult ValidateResult(Result result, Func<ActionResult> success = null, Action failure = null)
+        public ActionResult ValidateResult(ResultBase result, Func<ActionResult> success = null, Action failure = null)
         {
             if (!result.IsFailed)
             {

@@ -7,7 +7,7 @@ namespace FluentResults.StatusCodes.Extensions
 {
     public static class ResultExtensions
     {
-        private static string GetErrorsMessagesBase(ResultBase result)
+        private static string GetErrorsMessagesBase(IResultBase result)
         {
             var sb = new StringBuilder();
             var errors = result.Errors.Where(error => error.GetType() != typeof(ExceptionalError)).Select(error => error.Message);
@@ -34,7 +34,7 @@ namespace FluentResults.StatusCodes.Extensions
             return exception.InnerException != null ? $"{exception.Message}. {GetMessages(exception.InnerException)}" : exception.Message;
         }
 
-        public static ActionResult Validate(this Result result, Func<ActionResult> success = null, Action failure = null)
+        public static ActionResult Validate(this ResultBase result, Func<ActionResult> success = null, Action failure = null)
         {
             return new ResultControllerBase().ValidateResult(result, success, failure);
         }
