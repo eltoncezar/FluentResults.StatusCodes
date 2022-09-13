@@ -6,6 +6,7 @@
         <Version>1.0.0</Version>
         <Authors>eltoncezar</Authors>
         <Company>iatecbr</Company>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://dev.azure.com/sda-iatec/OpenMind.Arquitetura/_git/fluentresults-statuscodes</RepositoryUrl>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
