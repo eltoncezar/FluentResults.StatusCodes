@@ -6,6 +6,8 @@
         <Version>1.0.0</Version>
         <Authors>eltoncezar</Authors>
         <Company>iatecbr</Company>
+        <Description>Simple response status code management using FluentResults errors as validation.</Description>
+        <PackageTags>Result;Results;exception;error;handling</PackageTags>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <RepositoryUrl>https://dev.azure.com/sda-iatec/OpenMind.Arquitetura/_git/fluentresults-statuscodes</RepositoryUrl>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
